@@ -78,7 +78,7 @@ const Navbar = () => {
                 >Projects</Link>
                 <Link href="#" onClick={() => setContactMe(!contactMe)} className="hover:text-[20px] hover:text-[#373737] duration-300"
                 >Contact Me</Link>
-                <a href="./DanielResumeSW.pdf" download onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300">
+                <a href="./Daniel-Resume-SW.pdf" download onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300">
                     <FaFileDownload className="w-[25px] h-[25px]"/>
                 </a>
             </ul>

@@ -45,12 +45,12 @@ const About = () => {
         },
         onScreen: {
             opacity: 1,
-             y: 0,
-             transition: {
+            y: 0,
+            transition: {
                 type: "spring",
                 damping: 12,
                 stiffness: 100,
-             }
+            }
         }
     };
 
@@ -59,7 +59,7 @@ const About = () => {
             
            {/* profile picture */}
             <div className="profilePicResp w-[250px] h-[250px] relative">
-                <Image src="/../public/assets/Daniel_profile_pic.png" alt="profile image" 
+                <Image src="/Daniel_profile_pic.png" alt="profile image" 
                 fill 
                 sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,

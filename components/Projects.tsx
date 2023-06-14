@@ -179,7 +179,7 @@ const Projects = () => {
                     transition={{staggerChildren:0.2}}>
                         <motion.div className="page2Resp relative h-[110px] w-[70px] mr-4" 
                         variants={pagesAnimation}>
-                            <Image src="/../public/assets/page2.png" alt="page1" 
+                            <Image src="/page2.png" alt="page1" 
                             fill
                             sizes="(max-width: 768px) 100vw,
                                         (max-width: 1200px) 50vw,
@@ -187,7 +187,7 @@ const Projects = () => {
                             ></Image>
                         </motion.div >
                         <motion.div className="page1Resp absolute h-[100px] w-[100px] ml-6 mt-3" variants={pagesAnimation}>
-                            <Image src="/../public/assets/page1.png" alt="page2" 
+                            <Image src="/page1.png" alt="page2" 
                             fill
                             sizes="(max-width: 768px) 100vw,
                                         (max-width: 1200px) 50vw,
