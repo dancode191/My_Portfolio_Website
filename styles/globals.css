@@ -1,0 +1,640 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  html {
+    scroll-behavior: smooth !important;
+  }
+  
+}
+
+
+    /* NavBar page */
+
+  .navbarBase {
+    @apply fixed top-0 p-5 h-screen bg-[#29243ebf] border-[3px] border-[#171515] rounded-r-md ease-in-out duration-500;
+  }
+
+  /* svg */
+  .pathLine{
+    transition:  0.5s linear;
+  }
+  /* About page */
+  .cardLines {
+    @apply w-[25px] h-[6px] bg-[#29243ebf] rounded-md border-[1px] border-black self-end;
+  }
+
+  /* Skills page */
+  .frontEndSkillIcons {
+    @apply text-4xl w-[40px] h-[40px] rounded-xl flex justify-center items-center bg-[center_bottom_10%]  ease-in-out duration-700;
+  }
+
+  /* projects */
+  .projectTextBox {
+    @apply w-[100%] h-auto p-1 bg-[#29243ebf] text-white border-b-[#29243e] border-r-[#29243e] border-l-[#29243e] border-t-[#29243e34] border-[2px] rounded-b-xl
+  }
+
+
+
+
+/* %%%%%% responsive %%%%%% */
+
+
+/* %%% vertical mode: %%% */
+@media (min-width: 1300px) and (min-height: 1000px){
+  /* index.tsx */
+  .svgAnimeResp{
+    @apply hidden
+  }
+
+  /* About.tsx */
+  .aboutContainerResp{
+    @apply flex justify-around
+  }
+  .aboutMeTextBoxResp {
+    @apply w-[450px] h-[500px] !important;
+  }
+  .aboutMeTextResp {
+    @apply  text-2xl h-[40px];
+  }
+  .profilePicResp{
+    @apply w-[400px] h-[400px]
+  }
+  .LinesBoxResp {
+    @apply hidden;
+  }
+  /* Skills */
+  .skillsBoxResp{
+    @apply grid-rows-rowSetTabletVSkills gap-5
+  }
+  .skillsInnerBoxResp{
+    @apply h-[250px]
+  }
+  .iconsCateResp{
+    @apply w-[600px] self-center justify-self-center
+  }
+  .iconsTitleResp{
+    @apply text-[24px]
+  }
+  .iconsGroupResp{
+    @apply h-[150px] gap-10
+  }
+  .iconsSubGroupResp{
+    @apply gap-8 justify-center
+  }
+  .frontEndSkillIcons{
+    @apply w-[50px] h-[50px]
+  }
+  .iconeResp{
+    @apply w-[45px] h-[45px]
+  }
+  .iconTextResp{
+    @apply text-[20px]
+  }
+  .LaptopImgResp{
+    @apply w-[150px] h-[150px]
+  }
+  .laptopResp{
+    @apply w-[110px] h-[110px]
+  }
+
+  /* projects */
+  .projContainerResp{
+    @apply grid-rows-rowSet6
+  }
+  .projGroupResp{
+    @apply self-center
+  }
+  .folderBox{
+    @apply self-center
+  }
+  .page2Resp{
+    @apply w-[120px] h-[140px] mr-6
+  }
+  .page1Resp{
+    @apply w-[140px] h-[140px] mt-1
+  }
+  .projBoxResp{
+    @apply w-[500px] h-[220px]
+  }
+  .heartContainerResp{
+    @apply absolute w-[400px] bottom-2 mx-auto
+  } 
+  .bottTextResp{
+    @apply text-[22px]
+  } 
+  .bottBtnResp{
+    @apply w-[120px] h-[35px] text-[22px]
+  } 
+  .heartBoxResp {
+    @apply w-[40px] h-[40px] right-[130px]
+  }
+  .toolBoxsResp{
+    @apply w-[450px] text-[18px] left-[-20px]
+  }
+}
+
+/* for tablet screen  */
+@media ((min-width: 900px) and (max-width: 950px)){
+  .svgAnimeResp {
+    @apply hidden
+  }
+  .LinesBoxResp {
+    @apply hidden;
+  }
+}
+
+@media ((max-width: 950px) and (min-height: 1000px)){
+    /* index.tsx */
+    .svgAnimeResp {
+      @apply top-[-5%] translate-x-[-50.5%] left-[50.5%] 
+    }
+
+    /* NavBar.tsx */
+    .navbarOpenMenuResp{
+      @apply text-[20px]
+    }
+
+    /* About.tsx */
+    .aboutContainerResp{
+      @apply flex-col gap-[20px]
+    }
+    .profilePicResp {
+      @apply w-[300px] h-[300px] self-start
+    }
+    .LinesBoxResp {
+      @apply h-[70px] mb-[110px] pr-2
+    }
+    .threeLinesResp {
+      @apply w-[45px] h-[12px] 
+    }
+    .aboutMeTextBoxResp {
+      @apply w-[300px] self-end
+    }
+
+    /* skills.tsx */
+    .skillsContainerResp {
+      @apply p-3 
+    } 
+    .skillsBoxResp {
+      @apply m-0 gap-24 grid-rows-rowSetTabletVSkills
+    }
+    .skillsInnerBoxResp {
+      @apply  w-[100%] h-[100%];
+    }
+    .iconsCateResp{
+      @apply p-1
+    }
+    .iconsTitleResp{
+      @apply text-[22px] mb-[20px]
+    }
+    .iconBoxResp {
+      @apply h-[48px] w-[48px];
+    }
+    .iconeResp {
+      @apply h-[38px] w-[38px];
+    }
+    .iconsGroupResp {
+      @apply gap-1 mx-1
+    }
+    .iconsSubGroupResp {
+      @apply gap-7 ml-1
+    }
+    .iconTextResp {
+      @apply text-[15px]
+    }
+    .LaptopRingResp {
+      @apply h-[150px] w-[150px] mb-[69px] ml-0 border-8
+    }
+    .LaptopImgResp {
+      @apply h-[142px] w-[142px] mb-[69px] ml-0 
+    } 
+    .laptopResp{
+      @apply h-[100px] w-[100px]
+    }
+
+    /* Projects */
+    .projPageResp{
+      @apply justify-between
+    }
+    .projContainerResp{
+      @apply mt-[180px] grid-rows-rowSetTabletVProjects
+    }
+    .projBoxResp{
+      @apply w-[250px] h-[200px] z-[200]  
+    }
+    .page1Resp{
+      @apply w-[180px] h-[190px] ml-[50px] mt-[20px] 
+    }
+    .page2Resp{
+      @apply w-[130px] h-[190px] mt-[15px] 
+    }
+    .heartContainerResp{
+      @apply w-[500px] mr-[44px] mb-[21px] gap-24
+    }
+    .heartBoxResp{
+      @apply  right-[190px] 
+    }
+    .heartResp{
+      @apply w-[67px] h-[67px]
+    }
+    .bottBtnResp{
+      @apply h-[40px] w-[100px] text-[22px] self-end
+    }
+    .bottTextResp{
+      @apply text-[24px] self-end
+    }
+    .toolBoxsResp{
+      @apply w-[450px] text-center text-[18px] left-[50%] translate-x-[-50%]
+    }
+}
+
+/* for smaller tablet screen */
+@media ((max-width: 780px) and (min-height: 1000px)){
+    /* About.tsx */
+    .LinesBoxResp {
+      @apply h-[60px] mb-[110px] pr-4
+    }
+    .threeLinesResp {
+      @apply w-[40px] h-[10px] 
+    }
+
+    /* skills.tsx */
+    .iconBoxResp {
+      @apply h-[45px] w-[45px];
+    }
+    .iconeResp {
+      @apply h-[35px] w-[35px];
+    }
+    .iconTextResp {
+      @apply text-[14px]
+    }
+    .LaptopRingResp {
+      @apply h-[140px] w-[140px] mb-[63px] ml-0 border-8
+    }
+    .LaptopImgResp {
+      @apply h-[132px] w-[132px] mb-[63px] ml-0 
+    } 
+    .laptopResp{
+      @apply h-[90px] w-[90px]
+    }
+
+    /* Projects */
+    .projContainerResp{
+      @apply mt-[120px] grid-rows-rowSetTabletVProjects
+    }
+    .page1Resp{
+      @apply w-[160px] h-[170px] ml-[50px] mt-[20px] 
+    }
+    .page2Resp{
+      @apply w-[110px] h-[170px] mt-[15px] 
+    }
+    .heartContainerResp{
+      @apply w-[500px] mr-[40px] mb-[16px] gap-20
+    }
+    .heartBoxResp{
+      @apply  right-[195px] 
+    }
+    .heartResp{
+      @apply w-[62px] h-[62px]
+    }
+}
+
+/* for mobile screen */
+@media (max-width: 480px){
+    /* index.tsx */
+    .svgAnimeResp{
+      @apply hidden
+    }
+
+    /* NavBar.tsx */
+    .navbarlogoResp {
+      @apply basis-5/6 h-[70px] text-[25px]
+    }
+    .navbarMenuResp {
+      @apply basis-1/6 
+    }
+    
+    /* Navbar.tsx - contact me */
+    .contMeContainerResp {
+      @apply w-[380px] h-auto py-2
+    }
+    .formInputsResp{
+      @apply flex-col
+    }
+    .textAreaResp{
+      @apply w-[300px] h-[100px]
+    }
+
+    /* About.tsx */
+    .aboutContainerResp {
+      @apply flex-col;
+    }
+    .profilePicResp {
+      @apply w-[150px] h-[150px] m-auto z-[1000]
+    }
+    .LinesBoxResp {
+      @apply hidden;
+    }
+    .threeLinesResp {
+      @apply self-center;
+    }
+    .aboutMeTextBoxResp {
+      @apply w-[300px] h-[250px] mb-[70px];
+    }
+    .aboutMeTextResp {
+      @apply h-[20px];
+    }
+
+    /* Skills.tsx */
+    .skillsContainerResp {
+      @apply p-3;
+    }
+    .skillsBoxResp {
+      @apply p-0 grid-rows-rowSet
+    }
+    .skillsInnerBoxResp {
+      @apply p-0 m-auto h-[200px]
+    }
+    .iconBoxResp {
+      @apply h-[40px] w-[40px]
+    }
+    .iconeResp {
+      @apply h-[35px] w-[35px]
+    }
+    .iconsCateResp {
+      @apply h-[200px] px-[auto]
+    }
+    .iconsGroupResp {
+      @apply flex-col gap-2
+    }
+    .iconsSubGroupResp {
+      @apply flex-row ml-3
+    }
+    .iconsTitleResp {
+      @apply leading-5 mb-2 text-[15px];
+    }
+    .iconTextResp {
+      @apply hidden
+    }
+    .LaptopRingResp {
+      @apply mt-5 ml-0 h-[100px] w-[100px];
+    }
+    .LaptopImgResp {
+      @apply mt-5 ml-0 h-[95px] w-[93px];
+    }
+
+    /* Projects.tsx */
+    .projPageResp{
+      @apply px-1 justify-between
+    }
+    .projContainerResp{
+      @apply mt-[140px]
+    }
+    .projBoxResp{
+      @apply w-[140px] h-[120px] z-[200]
+    }
+    .proj3Resp{
+      @apply w-[100px] h-[120px] my-auto mr-9
+    }
+    .proj4Resp{
+      @apply 
+      w-[100px] h-[120px] my-auto ml-9
+    }
+    .projTextResp{
+      @apply h-[80px] text-[12px] z-[1000] p-1 overflow-auto
+    }
+    .toolstextResp{
+      @apply text-[10px]
+    }
+    .page1Resp{
+      @apply w-[130px] h-[110px] bottom-[16px]
+    }
+    .page2Resp{
+      @apply w-[90px] h-[110px] top-[10px]
+    }
+    .heartContainerResp{
+      @apply w-[400px] mr-[0px] ml-[15px] gap-20
+    }
+    .heartBoxResp{
+      @apply top-[3px] right-[181px]
+    }
+    .heartResp{
+      @apply w-[48px] h-[48px]
+    }
+    .bottTextResp{
+      @apply text-[16px]
+    }
+    .bottBtnResp{
+      @apply text-[16px]
+    }
+    .toolBoxsResp{
+      @apply w-[380px]  text-center
+    }
+}
+
+/* for small mobile screen */
+@media (max-width: 360px){
+    /* About.tsx */
+    .aboutMeTextBoxResp {
+      @apply w-[250px] h-[250px] mb-[50px];
+    }
+
+    /* Navbar.tsx - contact me */
+    .contMeContainerResp {
+      @apply w-[330px] py-4
+    }
+    .textAreaResp{
+      @apply w-[250px] h-[100px]
+    }
+
+    /* Skills.tsx */
+    .iconsCateResp {
+      @apply px-2
+    }
+
+    /* Projects.tsx */
+    .projContainerResp{
+      @apply mt-[80px]
+    }
+    .projBoxResp{
+      @apply w-[120px] 
+    }
+    .proj3Resp{
+      @apply w-[90px] my-auto mr-5
+    }
+    .proj4Resp{
+      @apply 
+      w-[90px] my-auto ml-5
+    }
+    .page1Resp{
+      @apply w-[110px] h-[100px] bottom-[16px] 
+      left-[0px]
+    }
+    .page2Resp{
+      @apply w-[80px] h-[100px] top-[18px]
+    }
+    .heartContainerResp{
+      @apply w-[345px] mr-[0px] ml-[20px] gap-12
+    }
+    .heartBoxResp{
+      @apply top-[5px] right-[157px]
+    }
+    .bottTextResp{
+      @apply text-[14px]
+    }
+    .bottBtnResp{
+      @apply text-[15px]
+    }
+    .toolBoxsResp{
+      @apply w-[320px]  text-center
+    }
+}
+
+
+/* %%% horizontal mode: %%% */
+
+/* for tablet screen  */
+@media ((min-width: 1000px) and (min-height: 720px)){
+  /* index.tsx */
+  .svgAnimeResp{
+    @apply hidden
+  }
+
+  /* About.tsx */
+  .aboutMeTextBoxResp {
+    @apply h-[250px];
+  }
+  .LinesBoxResp {
+    @apply hidden;
+  }
+
+  /* projects */
+  .projPageResp{
+    @apply justify-center relative
+  }
+  .heartContainerResp{
+    @apply absolute bottom-2
+  }
+}
+
+/* for mobile screen  */
+@media (max-height: 450px){
+    /* NavBar.tsx */
+    .navbarlogoResp {
+      @apply basis-5/6 h-[25px] text-[25px]
+    }
+    .navbarMenuResp {
+      @apply basis-1/6 
+    }
+
+    /* index.tsx */
+    .svgAnimeResp{
+      @apply hidden
+    }
+
+    /* About.tsx */
+    .LinesBoxResp {
+      @apply hidden;
+    }
+    .aboutMeTextBoxResp {
+      @apply w-[400px] h-[200px];
+    }
+
+    /* Skills.tsx */
+    .skillsContainerResp {
+      @apply p-2;
+    }
+    .skillsBoxResp {
+      @apply grid-rows-rowSet4 gap-0
+    }
+    .skillsInnerBoxResp {
+      @apply m-auto h-[auto]
+    }
+    .iconBoxResp {
+      @apply h-[35px] w-[35px]
+    }
+    .iconeResp {
+      @apply h-[30px] w-[30px]
+    }
+    .iconsCateResp {
+      @apply h-[auto] p-1
+    }
+    .iconsGroupResp {
+      @apply flex gap-2
+    }
+    .iconsSubGroupResp {
+      @apply flex ml-2 gap-2
+    }
+    .iconsTitleResp {
+      @apply leading-5 mb-2 text-[15px];
+    }
+    .iconTextResp {
+      @apply text-[12px]
+    }
+    .LaptopRingResp {
+      @apply  h-[70px] w-[70px];
+    }
+    .LaptopImgResp {
+      @apply  h-[63px] w-[63px];
+    }
+
+    /* Projects.tsx */
+    .projPageResp{
+      @apply pt-5 justify-between
+    }
+    .projContainerResp{
+      @apply grid-rows-rowSet5
+    }
+    .projBoxResp{
+      @apply w-[230px] h-[100px] z-[200]
+    }
+    .proj3Resp{
+      @apply  my-auto mr-0
+    }
+    .proj4Resp{
+      @apply my-auto ml-0
+    }
+    .projTextResp{
+      @apply h-[100px] text-[12px] z-[1000] p-1 overflow-auto
+    }
+    .page1Resp{
+      @apply w-[90px] h-[80px] bottom-[12px]
+    }
+    .page2Resp{
+      @apply w-[70px] h-[80px] top-[10px]
+    }
+    .heartContainerResp{
+      @apply justify-center items-center w-[400px] mt-[0px] mx-auto gap-10
+    }
+    .heartBoxResp{
+      @apply top-[15px] right-[40%] 
+    }
+    .heartResp{
+      @apply w-[25px] h-[25px]
+    }
+    .bottTextResp{
+      @apply text-[14px]
+    }
+    .bottBtnResp{
+      @apply text-[14px]
+    }
+}
+
+
+/* for small mobile screen */
+@media (max-height: 380px){
+    /* Projects */
+  .projPageResp{
+    @apply p-1 justify-center
+  }
+  .heartBoxResp{
+    @apply top-[0px]
+  }
+}
