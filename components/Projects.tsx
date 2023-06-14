@@ -264,7 +264,7 @@ const Projects = () => {
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`${isProjectOpen6 ? "rounded-t-xl": "rounded-xl"}`}  src="/../public/assets/projectPicture.png" alt="projectPicture" 
+                                <Image className={`${isProjectOpen6 ? "rounded-t-xl": "rounded-xl"}`}  src="/projectPicture.png" alt="projectPicture" 
                                 fill
                                 sizes="(max-width: 768px) 100vw,
                                         (max-width: 1200px) 50vw,
