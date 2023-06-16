@@ -108,7 +108,7 @@ const Navbar = () => {
                 />
 
             {/* menuLinks */}
-                    <ul className="basis-3/4 mt-10 h-fit flex flex-col text-[#F3EFE0]  gap-10 font-bold">
+                    <ul className="openMenuList basis-3/4 mt-10 h-fit flex flex-col text-[#F3EFE0]  gap-10 font-bold">
                         <Link href="#about" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300"
                         >About</Link>
                         <Link href="#skills" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300"
@@ -120,6 +120,9 @@ const Navbar = () => {
                             setMenuActive(false)
                         }} className="hover:text-[18px] duration-300"
                         >Contact Me</button>
+                        <a href="./Daniel-Resume-SW.pdf" download onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300 self-center">
+                            <FaFileDownload className="w-[25px] h-[25px]"/>
+                        </a>
                     </ul>
                 </div>
             </div>

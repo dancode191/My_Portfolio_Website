@@ -533,6 +533,9 @@
     .navbarMenuResp {
       @apply basis-1/6 
     }
+    .openMenuList {
+      @apply flex flex-col gap-7
+    }
 
     /* index.tsx */
     .svgAnimeResp{
