@@ -83,14 +83,14 @@ const Projects = () => {
                 {/* upper row */}
                 <div className="projGroupResp grid grid-cols-2">
                    {/* project 1 */}
-                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen1(!isProjectOpen1)}
+                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen1(!isProjectOpen1)}
                     animate={isProjectOpen1 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["50%","50%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen1 ? "rounded-t-xl": "rounded-xl"}`}  src="/project1.svg" alt="project Picture 1" 
+                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen1 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/project1.svg" alt="project Picture 1" 
                                 fill
                                 style={{objectFit: "cover"}}
                                 sizes="(max-width: 768px) 100vw,
@@ -112,14 +112,14 @@ const Projects = () => {
                     </motion.div>
                     
                     {/* project 2 */}
-                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen2(!isProjectOpen2)}
+                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen2(!isProjectOpen2)}
                     animate={isProjectOpen2 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["50%","-50%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen2 ? "rounded-t-xl": "rounded-xl"}`}  src="/project2.svg" alt="project Picture 2" 
+                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen2 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/project2.svg" alt="project Picture 2" 
                                 fill
                                 style={{objectFit: "cover"}}
                                 sizes="(max-width: 768px) 100vw,
@@ -144,14 +144,14 @@ const Projects = () => {
                 {/* middel row */}
                 <div className="projGroupResp grid grid-cols-3">
                     {/* project 3 */}
-                    <motion.div className="projBoxResp proj3Resp relative m-auto w-[300px] h-[130px] rounded-t-xl shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen3(!isProjectOpen3)}
+                    <motion.div className="projBoxResp proj3Resp relative m-auto w-[300px] h-[130px] rounded-t-xl shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen3(!isProjectOpen3)}
                     animate={isProjectOpen3 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["-20%","100%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen3 ? "rounded-t-xl": "rounded-xl"}`}  src="/project3.svg" alt="project Picture 3" 
+                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen3 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/project3.svg" alt="project Picture 3" 
                                 fill
                                 style={{objectFit: "cover"}}
                                 sizes="(max-width: 768px) 100vw,
@@ -197,14 +197,14 @@ const Projects = () => {
                     </motion.div>
 
                     {/* project 4 */}
-                    <motion.div className="projBoxResp proj4Resp relative m-auto w-[300px] h-[130px] rounded-t-xl shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen4(!isProjectOpen4)}
+                    <motion.div className="projBoxResp proj4Resp relative m-auto w-[300px] h-[130px] rounded-t-xl shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen4(!isProjectOpen4)}
                     animate={isProjectOpen4 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["-20%","-100%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen4 ? "rounded-t-xl": "rounded-xl"}`}  src="/project4.svg" alt="project Picture 4" 
+                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen4 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/project4.svg" alt="project Picture 4" 
                                 fill
                                 style={{objectFit: "cover"}}
                                 sizes="(max-width: 768px) 100vw,
@@ -229,14 +229,14 @@ const Projects = () => {
                 {/* lower row */}
                 <div className="projGroupResp grid grid-cols-2">
                     {/* project 5 */}
-                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen5(!isProjectOpen5)}
+                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen5(!isProjectOpen5)}
                     animate={isProjectOpen5 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["-130%","50%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen5 ? "rounded-t-xl": "rounded-xl"}`}  src="/project5.svg" alt="project Picture 5" 
+                                <Image className={`border-[2px]  border-t-[#29243e] border-b-black border-l-[#29243e] border-r-[#29243e] ${isProjectOpen5 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/project5.svg" alt="project Picture 5" 
                                 fill
                                 style={{objectFit: "cover"}}
                                 sizes="(max-width: 768px) 100vw,
@@ -257,14 +257,14 @@ const Projects = () => {
                     </motion.div>
                     
                     {/* project 6 */}
-                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF]" onClick={()=> setIsProjectOpen6(!isProjectOpen6)}
+                    <motion.div className="projBoxResp relative m-auto w-[400px] h-[150px] z-[500] shadow-lg shadow-[#F7F7FF] cursor-zoom-in" onClick={()=> setIsProjectOpen6(!isProjectOpen6)}
                     animate={isProjectOpen6 ? "open": "close"}
                     variants={projectAnimate}
                     custom={["-130%","-50%"]}>
                         
                         
                         <div className="w-[100%] h-[100%] relative">
-                                <Image className={`${isProjectOpen6 ? "rounded-t-xl": "rounded-xl"}`}  src="/projectPicture.png" alt="projectPicture" 
+                                <Image className={`${isProjectOpen6 ? "rounded-t-xl cursor-zoom-out": "rounded-xl"}`}  src="/projectPicture.png" alt="projectPicture" 
                                 fill
                                 sizes="(max-width: 768px) 100vw,
                                         (max-width: 1200px) 50vw,

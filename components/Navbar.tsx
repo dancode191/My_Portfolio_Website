@@ -15,6 +15,7 @@ const Navbar = () => {
 
     const [menuActive, setMenuActive] = useState(false);
     const [contactMe, setContactMe] = useState(false);
+    const [menuBtnColor, setMenuBtnColor] = useState("#cccdda");
     
     const logoText = "D a n i e l   -   W e b   D e v e l o p e r";
     const logoTextList = logoText.split(" ");
@@ -41,6 +42,13 @@ const Navbar = () => {
         
     const handleMenu = () =>{
         setMenuActive(!menuActive);
+
+        if(menuBtnColor == "#cccdda"){
+            setMenuBtnColor("#000")
+        }else{
+            setMenuBtnColor("#cccdda")
+        }
+            
     }
 
 
@@ -86,7 +94,7 @@ const Navbar = () => {
             {/* menuOpenBtn */}
             <div 
             className="navbarMenuResp md:hidden basis-3/4  self-center ">
-                <AiOutlineMenu className="float-right w-[30px] h-[30px] mr-1 hover:w-[33px] hover:h-[33px]" onClick={handleMenu}/>
+                <AiOutlineMenu className={`float-right w-[30px] h-[30px] text-[${menuBtnColor}] mr-1 hover:w-[33px] hover:h-[33px]`} onClick={handleMenu}/>
             </div>
 
             {/* Menu */}
