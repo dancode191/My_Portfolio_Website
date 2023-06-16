@@ -91,11 +91,11 @@ const About = () => {
             whileInView={"onScreen"}
             variants={wordsContainer}>
 
-               {word.map((word, index) => (
-                <motion.span className="aboutMeTextResp mr-1 h-[30px]" key={index} variants={wordsAnimation}>
-                    {word}
-                </motion.span>
-               ))}
+                {word.map((word, index) => (
+                    <motion.span className="aboutMeTextResp mr-1 h-[30px]" key={index} variants={wordsAnimation}>
+                        {word}
+                    </motion.span>
+                ))}
 
             </motion.div>
         </div>

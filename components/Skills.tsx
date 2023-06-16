@@ -14,6 +14,7 @@ import { SiTailwindcss } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { SiMysql } from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
+import { SiPostman } from 'react-icons/si';
 {/* frameWorks & Libraries icons*/}
 import { FaReact } from 'react-icons/fa';
 import { FaAngular } from 'react-icons/fa';
@@ -164,6 +165,11 @@ const Skills = () => {
                                 variants={BackEndIcons}>
                                     <li className="iconBoxResp frontEndSkillIcons group bg-[linear-gradient(#7A9E7E_50%,#fff_50%)] bg-[length:100%_200%] hover:bg-[center_bottom_100%]"><TbApi className="iconeResp h-[35px] w-[35px] text-[#7A9E7E] group-hover:text-[#fff] duration-1000"/></li>
                                     <span className="iconTextResp ml-1 text-[#F3EFE0]">Working with APIs</span>
+                                </motion.div>
+                                <motion.div className="flex items-center"
+                                variants={BackEndIcons}>
+                                    <li className="iconBoxResp frontEndSkillIcons group bg-[linear-gradient(#EF5B25_50%,#fff_50%)] bg-[length:100%_200%] hover:bg-[center_bottom_100%]"><SiPostman className="iconeResp h-[35px] w-[35px] text-[#EF5B25] group-hover:text-[#fff] duration-1000"/></li>
+                                    <span className="iconTextResp ml-1 text-[#F3EFE0]">Postman</span>
                                 </motion.div>
                             </ul>
                         </motion.div>
