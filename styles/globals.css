@@ -534,7 +534,7 @@
       @apply basis-1/6 
     }
     .openMenuList {
-      @apply flex flex-col gap-7
+      @apply flex flex-col gap-5 mt-5
     }
 
     /* index.tsx */

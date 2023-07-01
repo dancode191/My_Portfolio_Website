@@ -5,6 +5,7 @@ import { useState } from "react";
 {/* icons */}
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFileDownload } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 {/* form tools */}
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -51,7 +52,6 @@ const Navbar = () => {
             
     }
 
-
     return (
         <div 
         className={`navbarContainerResp relative bg-[#6C6F7D] p-1 flex flex-row w-screen h-full ${dosis.className} font-semibold`}>
@@ -89,6 +89,7 @@ const Navbar = () => {
                 <a href="./Daniel-Resume-SW.pdf" download onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300">
                     <FaFileDownload className="w-[25px] h-[25px]"/>
                 </a>
+                <a href="https://github.com/dancode191" onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300" target="_blank"><FaGithub className="w-[25px] h-[25px]"/></a>
             </ul>
 
             {/* menuOpenBtn */}
@@ -109,20 +110,21 @@ const Navbar = () => {
 
             {/* menuLinks */}
                     <ul className="openMenuList basis-3/4 mt-10 h-fit flex flex-col text-[#F3EFE0]  gap-10 font-bold">
-                        <Link href="#about" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300"
+                        <Link href="#about" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300 self-center"
                         >About</Link>
-                        <Link href="#skills" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300"
+                        <Link href="#skills" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300 self-center"
                         >Skills</Link>
-                        <Link href="#projects" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300"
+                        <Link href="#projects" onClick={() => setContactMe(false)} className="hover:text-[18px] duration-300 self-center"
                         >Projects</Link>
                         <button onClick={() => {
                             setContactMe(!contactMe)
                             setMenuActive(false)
-                        }} className="hover:text-[18px] duration-300"
+                        }} className="hover:text-[18px] duration-300 self-center"
                         >Contact Me</button>
                         <a href="./Daniel-Resume-SW.pdf" download onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300 self-center">
                             <FaFileDownload className="w-[25px] h-[25px]"/>
                         </a>
+                        <a href="https://github.com/dancode191" onClick={() => setContactMe(false)} className="hover:text-[#373737] duration-300 self-center" target="_blank"><FaGithub className="w-[25px] h-[25px]"/></a>
                     </ul>
                 </div>
             </div>
@@ -146,7 +148,8 @@ const Navbar = () => {
                                         <label htmlFor="name" className={`block ${formik.touched.name && formik.errors.name? "text-red-500" : "text-[#F3EFE0]"}`}>
                                             {formik.touched.name && formik.errors.name ? formik.errors.name: "Name:"}    
                                         </label>
-                                        <input type="text" name="name" value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur} className="bg-[#ffffff8f] text-[#F3EFE0] focus:ring-2 focus:ring-black outline-none rounded-md p-1" />
+                                        <input type="text" name="name" value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur} 
+                                        className="bg-[#ffffff8f] text-[#F3EFE0] focus:ring-2 focus:ring-black outline-none rounded-md p-1"/>
                                     </div>
                                     <div>
                                         <label htmlFor="email" className={`block ${formik.touched.email && formik.errors.email? "text-red-500" : "text-[#F3EFE0]"}`}>
